@@ -1,4 +1,4 @@
-import { SharedLayout } from "./components/SharedLayout.jsx";
+import { SharedLayout } from "./components/SharedLayout";
 import { Route, Routes } from "react-router-dom";
 import { lazy } from "react";
 import NotFound from "./pages/NotFound";
