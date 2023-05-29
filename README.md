@@ -17,4 +17,4 @@ Before running the app, make sure you have the following installed:
 
 ## Routing system
 
-- This app uses React Router for client-side routing, allowing seamless navigation between different pages without making additional server requests. React Router provides a <BrowserRouter> component that wraps the app and manages the routing configuration.
+- This app uses React Router for client-side routing, allowing seamless navigation between different pages without making additional server requests. React Router provides a <BrowserRouter> component that wraps the app and manages the routing configuration. y
