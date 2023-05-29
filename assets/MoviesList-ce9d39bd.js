@@ -1,0 +1,1 @@
+import{j as s,L as n}from"./index-df4f5ec0.js";const a=({movies:t,path:e="",location:i})=>s.jsx("ul",{children:t.map(({title:o,id:r})=>s.jsx("li",{children:s.jsx(n,{to:`${e}${r}`,state:{from:i},children:o})},r))});export{a as M};
