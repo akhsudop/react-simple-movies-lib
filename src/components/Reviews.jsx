@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useId } from "../utils/IdContext";
+import PropTypes from "prop-types";
 
 const API_KEY = "394f7f7b9c091369c76717b88c1e71f3";
 
@@ -46,3 +47,9 @@ const Reviews = () => {
   );
 };
 export default Reviews;
+
+Reviews.PropTypes = {
+  author: PropTypes.string,
+  content: PropTypes.string,
+  id: PropTypes.number,
+};

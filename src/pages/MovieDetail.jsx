@@ -8,6 +8,7 @@ import {
 import { useEffect, useState } from "react";
 import { Suspense } from "react";
 import { IdContext } from "../utils/IdContext";
+import PropTypes, { objectOf } from "prop-types";
 
 const API_KEY = "394f7f7b9c091369c76717b88c1e71f3";
 
@@ -92,3 +93,9 @@ const MovieDetail = () => {
   );
 };
 export default MovieDetail;
+
+MovieDetail.propTypes = {
+  onClick: PropTypes.func,
+  movieDetails: PropTypes.objectOf(PropTypes.string.isRequired), // id is a number???
+  movieId: PropTypes.number,
+};

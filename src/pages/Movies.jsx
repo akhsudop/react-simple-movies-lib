@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { useSearchParams, useLocation } from "react-router-dom";
 import { SearchBox } from "../components/SearchBox";
 import { MoviesList } from "../components/MoviesList";
+import PropTypes from "prop-types";
 
 const API_KEY = "394f7f7b9c091369c76717b88c1e71f3";
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
-  const [searchMovie, setSearchMovie] = useState("");
   const [searchParams, setSearchParams] = useSearchParams();
   const movieName = searchParams.get("name") ?? "";
   const location = useLocation();
@@ -57,3 +57,9 @@ const Movies = () => {
 };
 
 export default Movies;
+
+Movies.propTypes = {
+  handleSubmit: PropTypes.func,
+  movies: PropTypes.arrayOf(PropTypes.string),
+  location: PropTypes.object,
+};
